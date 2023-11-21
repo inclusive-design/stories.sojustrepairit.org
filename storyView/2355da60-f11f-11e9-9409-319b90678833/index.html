@@ -1,0 +1,233 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>A new planet discovered | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="/css/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="/css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="/css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/Orator.css">
+
+<script src="/css/handlebars.js"></script>
+<script src="/css/markdown-it.js"></script>
+<script src="/css/binder.js"></script>
+<script src="/css/transforms.js"></script>
+<script src="/css/equals.js"></script>
+<script src="/css/helper.js"></script>
+<script src="/css/jsonify.js"></script>
+<script src="/css/md-common.js"></script>
+<script src="/css/messageHelper_1.js"></script>
+<script src="/css/renderer_1.js"></script>
+<script src="/css/ajaxCapable.js"></script>
+<script src="/css/hasRequiredOptions.js"></script>
+<script src="/css/md-client.js"></script>
+<script src="/css/messageHelper.js"></script>
+<script src="/css/renderer.js"></script>
+<script src="/css/templateAware.js"></script>
+<script src="/css/templateFormControl.js"></script>
+<script src="/css/templateManager_1.js"></script>
+<script src="/css/templateMessage.js"></script>
+<script src="/css/templateRequestAndRender.js"></script>
+
+<script src="/css/dynamicViewComponentManager.js"></script>
+<script src="/css/binder_1.js"></script>
+<script src="/css/block.js"></script>
+<script src="/css/block-audio.js"></script>
+<script src="/css/block-image.js"></script>
+<script src="/css/block-text.js"></script>
+<script src="/css/block-video.js"></script>
+<script src="/css/block-timeBased.js"></script>
+<script src="/css/blockUi.js"></script>
+<script src="/css/blockUi-audioBlockViewer.js"></script>
+<script src="/css/blockUi-imageBlockViewer.js"></script>
+<script src="/css/blockUi-textBlockViewer.js"></script>
+<script src="/css/blockUi-videoBlockViewer.js"></script>
+<script src="/css/blockUi-timeBased.js"></script>
+<script src="/css/base-page-storyView.js"></script>
+<script src="/css/base-page-storyNotFound.js"></script>
+<script src="/css/base-page.js"></script>
+<script src="/css/story.js"></script>
+<script src="/css/templateManager.js"></script>
+<script src="/css/ui.js"></script>
+<script src="/css/ui-authorControls.js"></script>
+<script src="/css/ui-menu.js"></script>
+<script src="/css/ui-storyViewer.js"></script>
+<script src="/css/uploader.js"></script>
+<script src="/css/transforms_1.js"></script>
+<script src="/css/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/storyTelling.css">
+<link rel="stylesheet" href="/css/fluid.css">
+
+<script src="/css/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/sojustrepairit.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-4r7c0eie-1354">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-4r7c0eie-2085" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-4r7c0eie-2085" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-4r7c0eie-2085" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="/SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-4r7c0eie-2085" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-4r7c0eie-2085" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container"></div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a href="https://sojustrepairit.org" class="sjrk-st-page-header-main-title" aria-label="SJRK"></a>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li><a href="/storyBrowse.html">Browse Stories</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-4r7c0eie-6772"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-4r7c0eie-3261"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>A new planet discovered</h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-4r7c0eie-6762"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-4r7c0eie-6767"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">A new planet discovered</h2>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-3301">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>In May 2018, a group of high school students from Fresno, a small town in the mountains of Colombia, visited the city of Medellín for the first time. They traveled 7 hours by bus to participate in a 3 days event to share experiences and ideas with a group of young women that are interested in sovereignty, technologies, and gender.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-3586">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Arriving at Medellín</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="/images/22d511a0-f11f-11e9-9409-319b90678833.jpg" alt="A group of people (4 adults and 2 teenagers) are showing to the camera a box full of fruits and groceries. ">
+        <p class="sjrk-st-block-text-view"></p><p>A group of people is showing to the camera a box full of fruits and groceries.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-3870">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>All the details were ready for this great encounter between two generations of young people with very different contexts and backgrounds. The venue for this event was the house of Platohedro, a very special place where art and technologies are the bases to create collaborative and experimental projects.</p>
+<p>The group of young women from Medellín has a project named “Motivando a la Gyal” (M.A.G)*. A women-led platform that runs a Festival every year. M.A.G group was nervous because this was the first time they prepare an activity like this, an activity for a group of young people that came from the countryside. They wanted to offer an amazing agenda to the boys and girls from Fresno, so they can feel comfortable, safe and happy. And that was exactly what happened.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-4156">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Gender workshop</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="/images/22d5fc00-f11f-11e9-9409-319b90678833.jpg" alt="A group of people is listening to a person that is talking to them. The groups is sat and look calm.">
+        <p class="sjrk-st-block-text-view"></p><p>A group of people is listening to a person that is talking to them.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-4444">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>During 3 days they realized that all of them want it to take care of the environment and that they are working on that though their projects in the school and with the Festival.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-4734">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Orchards</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="/images/22d7a9b0-f11f-11e9-9409-319b90678833.JPG" alt="A group of people is surrounding an orchard. They mostly women. Some of them look like they are talking, some are standing with their cell phones.">
+        <p class="sjrk-st-block-text-view"></p><p>A group of people is surrounding an orchard</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-5026">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>They visited the Manga Libre and other community orchards in Medellín and share knowledge about plants, herbs and about products like “panela” that are produced from sugarcane. The young girls from M.A.G were surprised about all the knowledge that the students from Fresno have about the work on the farms. For the students, the idea of having an orchard in the middle of the city was surprising as well because they are used to living in large extensions of land in a very rich and fertile territory.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-5320" id="fluid-id-4r7c0eie-6793">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Panela</p>
+</h3>
+        <video class="sjrk-st-block-media-preview sjrkc-st-block-media-preview" controls="" src="/media/22dba150-f11f-11e9-9409-319b90678833.mp4">
+            <source src="/media/22dba150-f11f-11e9-9409-319b90678833.mp4">
+            
+        </video>
+        <p class="sjrk-st-block-text-view"></p><p>A woman and a young woman talked about why panela has different tones.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-5629">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>During 3 days the participants of the event to share ideas about inclusiveness, gender, care, seeds, environment and learn a lot about the differences and the struggles that the people that live in the cities and those who live in the countryside have in common.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-5927">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Enjoying Medellín</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="/images/235405a0-f11f-11e9-9409-319b90678833.png" alt="A black and white picture of a group of people, mostly young people that are playing around a water fountain.">
+        <p class="sjrk-st-block-text-view"></p><p>A group of people, mostly young people are playing around a water fountain.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-4r7c0eie-6227">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>A new planet was discovered during those 3 days. A planet of sharing, listening and exchanging. A planet that is a school.</p>
+<p>*slang for “girl”.</p>
+</div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>Led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p><p>Hosted by <a href="https://netlify.com/" rel="external">Netlify</a>.</p><p>Hosted by <a href="https://netlify.com" rel="external">Netlify</a>.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+</body></html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>From short (very short) videos to a newscast | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="/js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="/css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="/css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/Orator.css">
+
+<script src="/js/handlebars.js"></script>
+<script src="/js/markdown-it.js"></script>
+<script src="/js/binder.js"></script>
+<script src="/js/transforms.js"></script>
+<script src="/js/equals.js"></script>
+<script src="/js/helper.js"></script>
+<script src="/js/jsonify.js"></script>
+<script src="/js/md-common.js"></script>
+<script src="/js/messageHelper.js"></script>
+<script src="/js/renderer.js"></script>
+<script src="/js/ajaxCapable.js"></script>
+<script src="/js/hasRequiredOptions.js"></script>
+<script src="/js/md-client.js"></script>
+<script src="/js/messageHelper_1.js"></script>
+<script src="/js/renderer_1.js"></script>
+<script src="/js/templateAware.js"></script>
+<script src="/js/templateFormControl.js"></script>
+<script src="/js/templateManager.js"></script>
+<script src="/js/templateMessage.js"></script>
+<script src="/js/templateRequestAndRender.js"></script>
+
+<script src="/js/dynamicViewComponentManager.js"></script>
+<script src="/js/binder_1.js"></script>
+<script src="/js/block.js"></script>
+<script src="/js/block-audio.js"></script>
+<script src="/js/block-image.js"></script>
+<script src="/js/block-text.js"></script>
+<script src="/js/block-video.js"></script>
+<script src="/js/block-timeBased.js"></script>
+<script src="/js/blockUi.js"></script>
+<script src="/js/blockUi-audioBlockViewer.js"></script>
+<script src="/js/blockUi-imageBlockViewer.js"></script>
+<script src="/js/blockUi-textBlockViewer.js"></script>
+<script src="/js/blockUi-videoBlockViewer.js"></script>
+<script src="/js/blockUi-timeBased.js"></script>
+<script src="/js/base-page-storyView.js"></script>
+<script src="/js/base-page-storyNotFound.js"></script>
+<script src="/js/base-page.js"></script>
+<script src="/js/story.js"></script>
+<script src="/js/templateManager_1.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/ui-authorControls.js"></script>
+<script src="/js/ui-menu.js"></script>
+<script src="/js/ui-storyViewer.js"></script>
+<script src="/js/uploader.js"></script>
+<script src="/js/transforms_1.js"></script>
+<script src="/js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/storyTelling.css">
+<link rel="stylesheet" href="/css/fluid.css">
+
+<script src="/js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/sojustrepairit.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-beyv7gia-1354">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-beyv7gia-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-beyv7gia-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-beyv7gia-2332" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="/SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-beyv7gia-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-beyv7gia-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container"></div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a href="https://sojustrepairit.org" class="sjrk-st-page-header-main-title" aria-label="SJRK"></a>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li><a href="/storyBrowse.html">Browse Stories</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-beyv7gia-6468"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-beyv7gia-3261"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>From short (very short) videos to a newscast</h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-beyv7gia-6460"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-beyv7gia-6465"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">From short (very short) videos to a newscast</h2>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-3301">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>In January 2018, the Real Campestre School in Fresno (a small town in the coffee region in Colombia) opened its doors to a new project named: “Oportunidades para jóvenes cafeterxs”. The core of the project is a technological tool, a local network that brings a digital environment into the classroom where students and teachers can upload and share videos, images, text and any kind of digital resources.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-3586">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Kimera Local Network</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="/images/df0d0250-f120-11e9-9409-319b90678833.png" alt="A diagram of the Kimera Local Network showing the server, the setup of the local network, and the devices of the users">
+        <p class="sjrk-st-block-text-view"></p><p>Graphic that explains how works the Kimera Local Network</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-3870">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Why is this important?</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>In Fresno, like in many other places in Colombia, connectivity is still a challenge.  In the cities, 91 out of 100 schools have Wi-Fi or broadband, but in the countryside, only 53 out of 100 can enjoy this privilege ” (Semana, 2020).</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-4156">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Institución Educativa Real Campestre</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="/images/df0e13c0-f120-11e9-9409-319b90678833.JPG" alt="A blue and white school entrance. Some people appear in the back of the image. The sky looks white. ">
+        <p class="sjrk-st-block-text-view"></p><p>Photo of the school entrance.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-4444">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>A network build of stories!</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>There is not a technological tool that fully works without an appropriation process. “Oportunidades para jóvenes cafeterxs” seek to raise curiosity and the desire to know and learn as well as the willingness to listen and narrate, in order to use the local network as a tool to share those stories and resources that students and teachers find interesting, fun and useful.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-4734">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Poster Aula Digital Abierta</p>
+</h3>
+        <img class="sjrk-st-block-media-preview" src="/images/df125980-f120-11e9-9409-319b90678833.jpg" alt="A poster with a message: “During the last 2 years, Karisma Foundation has been working in the developing of the Kimera Local Network, an alternative that provides access to resources through cell phones, tablets, and computers. Allowing us to improve our “teaching-learning” processes in all courses. Thanks for believing in the Real Campestre School”">
+        <p class="sjrk-st-block-text-view"></p><p>Photo of a poster with information about the Kimera Local Network.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-5026">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>What you want to do?</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>We asked students of Real Campestre to videotaped a short video to introduce themselves. Some of them looked shy in front of the cell phone camera, some spoke too fast, but others looked quite confident. In a diverse group like this, you will find a different reactions and ways to participate in the project.</p>
+<p>The short videos exercises continued during the whole project: it could be understood as a collective album or as the “behind the scenes” of the project.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-5320" id="fluid-id-beyv7gia-6489">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Presentation Angie Dayana Escobar Ballesteros</p>
+</h3>
+        <video class="sjrk-st-block-media-preview sjrkc-st-block-media-preview" controls="" src="/media/df12ceb0-f120-11e9-9409-319b90678833.mp4">
+            <source src="/media/df12ceb0-f120-11e9-9409-319b90678833.mp4">
+            
+        </video>
+        <p class="sjrk-st-block-text-view"></p><p>A short video presentation of Angie Dayana Escobar, one of the students participating in the project.</p>
+<p></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-5629">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Everything is happening!</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>In the second year of the project, students want to share all the things that were happening in the school. With the support of some of their teachers, they develop a new idea: a newscast to share the news that take place into their own educational community.</p>
+<p>Interviews and reports have been filmed by the students using their own cell phones cameras, a low cost microphone and technical tools like tripods and screens to handle the light are building by the students with recycling materials.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-beyv7gia-5927">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>A newscast in the local network</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>Because connectivity is low or nil in the school, students upload every chapter of the newscast in the local network to be shared with other students or even with their parents when they have access to the network.</p>
+<p>“Noticiero Real al día” has 22 videos that are also available on YouTube and Facebook. This initiative has raised new challenges and questions to the students. From what stories they want to share in the news and what technique solutions they need to develop to improve the quality of the image until how they should look and speak in front of the camera.</p>
+<p>Visit the youtube channel:
+<a href="https://www.youtube.com/channel/UCwZyE0E5fpLKd607MEJTHiA/videos">https://www.youtube.com/channel/UCwZyE0E5fpLKd607MEJTHiA/videos</a></p>
+</div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>Led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p><p>Hosted by <a href="https://netlify.com/" rel="external">Netlify</a>.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+
+</body></html>

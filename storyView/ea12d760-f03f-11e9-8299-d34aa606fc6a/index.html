@@ -1,0 +1,232 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>CREARTE COMUNICATIVO Taller creatividad aplicada a la comunicación. | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="/js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="/css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="/css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/Orator.css">
+
+<script src="/js/handlebars.js"></script>
+<script src="/js/markdown-it.js"></script>
+<script src="/js/binder.js"></script>
+<script src="/js/transforms.js"></script>
+<script src="/js/equals.js"></script>
+<script src="/js/helper.js"></script>
+<script src="/js/jsonify.js"></script>
+<script src="/js/md-common.js"></script>
+<script src="/js/messageHelper.js"></script>
+<script src="/js/renderer.js"></script>
+<script src="/js/ajaxCapable.js"></script>
+<script src="/js/hasRequiredOptions.js"></script>
+<script src="/js/md-client.js"></script>
+<script src="/js/messageHelper_1.js"></script>
+<script src="/js/renderer_1.js"></script>
+<script src="/js/templateAware.js"></script>
+<script src="/js/templateFormControl.js"></script>
+<script src="/js/templateManager.js"></script>
+<script src="/js/templateMessage.js"></script>
+<script src="/js/templateRequestAndRender.js"></script>
+
+<script src="/js/dynamicViewComponentManager.js"></script>
+<script src="/js/binder_1.js"></script>
+<script src="/js/block.js"></script>
+<script src="/js/block-audio.js"></script>
+<script src="/js/block-image.js"></script>
+<script src="/js/block-text.js"></script>
+<script src="/js/block-video.js"></script>
+<script src="/js/block-timeBased.js"></script>
+<script src="/js/blockUi.js"></script>
+<script src="/js/blockUi-audioBlockViewer.js"></script>
+<script src="/js/blockUi-imageBlockViewer.js"></script>
+<script src="/js/blockUi-textBlockViewer.js"></script>
+<script src="/js/blockUi-videoBlockViewer.js"></script>
+<script src="/js/blockUi-timeBased.js"></script>
+<script src="/js/base-page-storyView.js"></script>
+<script src="/js/base-page-storyNotFound.js"></script>
+<script src="/js/base-page.js"></script>
+<script src="/js/story.js"></script>
+<script src="/js/templateManager_1.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/ui-authorControls.js"></script>
+<script src="/js/ui-menu.js"></script>
+<script src="/js/ui-storyViewer.js"></script>
+<script src="/js/uploader.js"></script>
+<script src="/js/transforms_1.js"></script>
+<script src="/js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/storyTelling.css">
+<link rel="stylesheet" href="/css/fluid.css">
+
+<script src="/js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/sojustrepairit.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-7g2iuvkb-1354">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-7g2iuvkb-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-7g2iuvkb-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-7g2iuvkb-2332" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="/SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-7g2iuvkb-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-7g2iuvkb-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container"></div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a href="https://sojustrepairit.org" class="sjrk-st-page-header-main-title" aria-label="SJRK"></a>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li><a href="/storyBrowse.html">Browse Stories</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-7g2iuvkb-5859"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-7g2iuvkb-3261"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>CREARTE COMUNICATIVO Taller creatividad aplicada a la comunicación.</h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-7g2iuvkb-5849"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-7g2iuvkb-5854"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">CREARTE COMUNICATIVO Taller creatividad aplicada a la comunicación.</h2>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-3301">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <div class="sjrk-st-block-text-view"><p>Durante el mes de mayo se realizaron 8 talleres auspiciados por la Fundación Karisma en el marco del proyecto Oportunidades para jóvenes rurales. Estos talleres se distribuyeron entre 3 sedes de la institución; sede principal, Mirella 3 talleres, Las Marias 2 talleres y Betania con 3 talleres.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-3586">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>STOP MOTION</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p><a href="https://www.youtube.com/watch?v=t5rKFK3KC2Q"><img src="https://img.youtube.com/vi/t5rKFK3KC2Q/0.jpg" alt="STOP MOTION"></a></p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-3870">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Dinámica del Taller</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>El taller consiste en una misma formula que va tomando forma dependiendo de las destrezas e intereses de cada grupo.</p>
+<p>Lo primero, es una presentación grupal en la que compartimos nuestro nombre, edad, gustos y sueños a realizar, seguidamente, bajo la inspiración de los proyectos hablamos de la importancia de las comunicaciones y el arte en el mundo en que nos encontramos y cómo el uso de herramientas web nos permiten la puerta a emprender el camino de nuestro futuro desde hoy.</p>
+<p><a href="https://www.youtube.com/watch?v=iR6D226g7v8"><img src="https://img.youtube.com/vi/iR6D226g7v8/0.jpg" alt="STOP MOTION"></a></p>
+<p>Se les pide que en una hoja escriban la respuesta a las preguntas; ¿quién soy? ¿de dónde vengo? ¿para dónde voy? y ¿cuál es mi propósito?, con el fin de que contesten a través de un vídeo realizado con las herramientas entregadas. Éste producto se sube a la plataforma bajo el nombre de Cápsula del Tiempo, proyecto que pretende reforzar el horizonte que les permitirá a los chicos desarrollarse en todas las esferas de su vida, narrar su identidad y proyectarse hacia el futuro.</p>
+<p>Seguidamente les comparto algo sobre mi trabajo en Las Crónicas de Juana, enfocando las fortalezas de los dispositivos móviles que generalmente tenemos a la mano y con lo cuales podemos realizar casi cualquier cosa en términos creativos y audiovisuales.</p>
+<p>Dentro del análisis de éstos productos surgen temas claves dentro de la pre, post y producción como: el manejo de la cámara y la importancia de la curiosidad como base de una buena fotografía, tipos de plano y ángulos, la entrevista, la expresión corporal y lingüística, el uso de la música, los derechos de imagen y autoría, trabajo de edición, entre otros.</p>
+<p>Cabe resaltar que no es posible profundizar acerca de estos temas, pues el tiempo de 2 horas por taller se hace corto entre un universo de detalles que componen una obra visual, sin embargo, se les deja una semilla y en quienes germine, encontrarán en las herramientas entregadas la forma más eficiente de aprender.</p>
+<p><a href="https://www.youtube.com/watch?v=4XnYqeYHwu0"><img src="https://img.youtube.com/vi/4XnYqeYHwu0/0.jpg" alt="STOP MOTION"></a></p>
+<p>Como ejercicio del taller, tomamos el StopMotion como una de las técnicas de realización más sencilla y eficiente, con la que hacemos una animación grupal, esto les permite a los chicos ver la facilidad con la que podemos llevar a cabo nuestras ideas creativas y llevarse a sus casas la experiencia vivida del mundo que se mueve detrás de los contenidos que todo el tiempo están recibiendo a través de redes sociales y entender que ellos tienen todo para ser también generadores de contenido.</p>
+<p><a href="https://www.youtube.com/watch?v=HrlQTm2HFZw"><img src="https://img.youtube.com/vi/HrlQTm2HFZw/0.jpg" alt="STOP MOTION"></a></p>
+<p>Para cerrar el taller, se les comparten las herramientas de realización con celular FilmoraGo, MyMovie, Creador de Memes, Creador de Gift y DuRecorder, con las que tienen infinitas posibilidades que ponen a volar su imaginación.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-4156">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Sede principal. Mirella.</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>El jueves 16 de mayo se visitó la sede principal donde fui amablemente recibida a las 8:00 am por la profesora Giovanna. El primer taller se desarrollo dentro de lo esperado con 9º, nos basamos en mi experiencia como comunicadora social y periodista, pensando también en potenciar las habilidades creativas a reforzar con el fin de implementarlas dentro del marco del Noticiero Real al Día. El taller finalizó alrededor de las 10:00 am. El segundo taller tuvo cabida de 10:15 a 12:30 con el grado 8º y el taller de cierre se realizó con 10º y 11º entre la 1 y las 3:30.</p>
+<p><a href="https://www.youtube.com/watch?v=h3OGP-w6o9g"><img src="https://img.youtube.com/vi/h3OGP-w6o9g/0.jpg" alt="STOP MOTION"></a></p>
+<p>Se identificaron talentos y fortalezas entre algunos chicos y chicas destacados, quienes dentro de sus intereses consideran el camino de las comunicaciones (en su mayoría youtubers) como una posibilidad y necesidad latente para sus futuros cercanos.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-4444">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Taller Crearte Comunicativo I</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p><a href="https://www.youtube.com/watch?v=nl56d4Re66o"><img src="https://img.youtube.com/vi/nl56d4Re66o/0.jpg" alt="Taller Crearte Comunicativo I"></a></p>
+<p>Evidencia: Informe audiovisual de la experiencia. Ejemplo de reportaje como recomendación al proyecto de noticiero Real al Día.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-4734">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Sede Las Marías.</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>Después de un par de horas de viaje en jeep por un camino destapado y lluvioso, llegamos alrededor de las 8:00 am a la escuela de Las Marías, donde nos esperaba el profesor Byron, quien nos condujo a la clase con los chicos de 9º, quienes se levantaron amablemente ante mi llegada como señal de saludo y respeto. El taller se desarrollo normalmente hasta las 10:00 am, hora en que llegaron los chicos de 8º y con quienes dimos continuidad hasta las 12:00 m.</p>
+<p><a href="https://www.youtube.com/watch?v=-tgHtkV7vdI"><img src="https://img.youtube.com/vi/-tgHtkV7vdI/0.jpg" alt="STOP MOTION"></a></p>
+<p>Podría decir que la experiencia con estos chicos ha sido una de las más inspiradoras, pues su curiosidad y disposición permitió un trabajo fluido que con un par de horas extra de reunión en la tarde que nos permitió realizar un cortometraje llamdo "Pecas" realizado como una colaboración de todos.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-5026">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Taller CreArte Comunicativo II. Las Marias</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p><a href="https://www.youtube.com/watch?v=4B19EaQKEXA"><img src="https://img.youtube.com/vi/4B19EaQKEXA/0.jpg" alt="Taller CreArte Comunicativo II. Las Marias"></a></p>
+<p>Evidencia: Cortometraje "Pecas", sobre el bullying.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-7g2iuvkb-5320">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Sede Betania.</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>Un día soleado nos aguardaba en la vereda Betania, los talleres con 8º, 9º y 11º, se desarrollaron eficientemente gracias a la colaboración de los chicos y sobre todo de la profesora Ruth y su hija, quienes amablemente estuvieron activas y atentas desde el recibimiento hasta el final de los talleres.</p>
+<p><a href="https://www.youtube.com/watch?v=hx01EvbhYew"><img src="https://img.youtube.com/vi/hx01EvbhYew/0.jpg" alt="STOP MOTION"></a></p>
+<p>Fue un día de bastante trabajo, junto a los chicos aplicamos lo aprendido y en la tarde realizamos una actividad de recuperación de la memoria histórica del corregimiento que los ha visto crecer. Fue así como alrededor de 25 chicos que se quedaron para darle continuidad al proceso, se movieron haciendo entrevistas, filmando los espacios, fotografiando curiosidades y sobre todo explorando sus habilidades.</p>
+<p>Evidencia: Crónica en Betania, denuncia de problemática</p>
+<p><a href="https://www.youtube.com/watch?v=cKw6KEJLPv4"><img src="https://img.youtube.com/vi/cKw6KEJLPv4/0.jpg" alt="STOP MOTION"></a></p>
+</div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>Led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p><p>Hosted by <a href="https://netlify.com/" rel="external">Netlify</a>.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+
+</body></html>

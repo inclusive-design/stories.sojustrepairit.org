@@ -1,0 +1,418 @@
+<!DOCTYPE html><html style="font-size: 16px;"><head>
+<title>Jorge's Story | The Storytelling Project</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="/js/infusion-all.js"></script><style type="text/css">.fl-progEnhance-basic, .fl-ProgEnhance-basic { display: none; } .fl-progEnhance-enhanced, .fl-ProgEnhance-enhanced { display: block; }</style>
+
+<!-- UIO stylesheets -->
+<link rel="stylesheet" type="text/css" href="/css/Enactors.css">
+<link rel="stylesheet" type="text/css" href="/css/PrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/SeparatedPanelPrefsEditor.css">
+<link rel="stylesheet" type="text/css" href="/css/Orator.css">
+
+<script src="/js/handlebars.js"></script>
+<script src="/js/markdown-it.js"></script>
+<script src="/js/binder.js"></script>
+<script src="/js/transforms.js"></script>
+<script src="/js/equals.js"></script>
+<script src="/js/helper.js"></script>
+<script src="/js/jsonify.js"></script>
+<script src="/js/md-common.js"></script>
+<script src="/js/messageHelper.js"></script>
+<script src="/js/renderer.js"></script>
+<script src="/js/ajaxCapable.js"></script>
+<script src="/js/hasRequiredOptions.js"></script>
+<script src="/js/md-client.js"></script>
+<script src="/js/messageHelper_1.js"></script>
+<script src="/js/renderer_1.js"></script>
+<script src="/js/templateAware.js"></script>
+<script src="/js/templateFormControl.js"></script>
+<script src="/js/templateManager.js"></script>
+<script src="/js/templateMessage.js"></script>
+<script src="/js/templateRequestAndRender.js"></script>
+
+<script src="/js/dynamicViewComponentManager.js"></script>
+<script src="/js/binder_1.js"></script>
+<script src="/js/block.js"></script>
+<script src="/js/block-audio.js"></script>
+<script src="/js/block-image.js"></script>
+<script src="/js/block-text.js"></script>
+<script src="/js/block-video.js"></script>
+<script src="/js/block-timeBased.js"></script>
+<script src="/js/blockUi.js"></script>
+<script src="/js/blockUi-audioBlockViewer.js"></script>
+<script src="/js/blockUi-imageBlockViewer.js"></script>
+<script src="/js/blockUi-textBlockViewer.js"></script>
+<script src="/js/blockUi-videoBlockViewer.js"></script>
+<script src="/js/blockUi-timeBased.js"></script>
+<script src="/js/base-page-storyView.js"></script>
+<script src="/js/base-page-storyNotFound.js"></script>
+<script src="/js/base-page.js"></script>
+<script src="/js/story.js"></script>
+<script src="/js/templateManager_1.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/ui-authorControls.js"></script>
+<script src="/js/ui-menu.js"></script>
+<script src="/js/ui-storyViewer.js"></script>
+<script src="/js/uploader.js"></script>
+<script src="/js/transforms_1.js"></script>
+<script src="/js/UIOMultilingualDemo.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+
+<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,700|Work+Sans:400,500,700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/storyTelling.css">
+<link rel="stylesheet" href="/css/fluid.css">
+
+<script src="/js/storyTellingServerUI.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/css/sojustrepairit.css"></head>
+<body class="fl-theme-prefsEditor-default" style="line-height: 1.15;">
+
+<div class="sjrk-prefsEditor-container">
+    <!-- BEGIN markup for Preference Editor -->
+   <div class="flc-prefsEditor-separatedPanel fl-prefsEditor-separatedPanel" id="fluid-id-77ybp6p0-1354">
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the mobile view.
+           A separate panel bar for mobile displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-smallScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-77ybp6p0-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-77ybp6p0-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+
+       <!-- This is the div that will contain the Preference Editor component -->
+       <div class="flc-slidingPanel-panel flc-prefsEditor-iframe" id="fluid-id-77ybp6p0-2332" aria-label="User Preferences" role="group" style="height: 0px;"><iframe class="flc-iframe fl-prefsEditor-separatedPanel-iframe" src="/SeparatedPanelPrefsEditorFrame.html" style="display: none; height: 0px;"></iframe></div>
+
+       <!--
+           This div is for the sliding panel bar that shows and hides the Preference Editor controls in the desktop view.
+           A separate panel bar for desktop displays is needed to preserver the correct tab order.
+       -->
+       <div class="fl-panelBar fl-panelBar-wideScreen">
+           <span class="fl-prefsEditor-buttons">
+               <button class="flc-slidingPanel-toggleButton fl-prefsEditor-showHide" role="button" aria-controls="fluid-id-77ybp6p0-2332" aria-label="Show Display Preferences" aria-pressed="false" aria-expanded="false">+ Show Preferences</button>
+               <button class="flc-prefsEditor-reset fl-prefsEditor-reset" aria-controls="fluid-id-77ybp6p0-2332" role="button" style="display: none;"><span class="fl-icon-undo"></span> Reset</button>
+           </span>
+       </div>
+   </div>
+   <!-- END markup for Preference Editor -->
+</div>
+
+<div class="sjrk-st-author-controls-container sjrkc-st-author-controls-container"></div>
+<header class="sjrk-st-page-header-container sjrkc-st-page-header-container"><div class="sjrk-st-page-header">
+    <a href="https://sojustrepairit.org" class="sjrk-st-page-header-main-title" aria-label="SJRK"></a>
+</div>
+<div class="sjrk-st-top-menu">
+    <nav>
+        <ul>
+            <li><a href="/storyBrowse.html">Browse Stories</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+
+<!-- This div is for the table of contents feature provided by the Preferences Editor -->
+<div class="flc-toc-tocContainer toc"></div>
+<main class="sjrk-st-page-content-container">
+    <div class="sjrk-main-container">
+        <div class="sjrk-st-menu sjrkc-st-menu" id="fluid-id-77ybp6p0-12877"></div>
+        <div class="sjrk-st-story-viewer sjrkc-st-story-viewer" id="fluid-id-77ybp6p0-3261"><div class="sjrk-st-page-body">
+    <section class="sjrk-st-lr-knockout">
+            <h1>Jorge's Story</h1>
+    </section>
+    <section class="sjrk-st-lr-padding">
+        <div lang="en" class="sjrkc-st-story-viewer-main-container sjrk-st-story-viewer-main-container" id="fluid-id-77ybp6p0-12867"><div class="flc-orator-controller fl-orator-controller" id="fluid-id-77ybp6p0-12872"><div class="fl-icon-orator" aria-hidden="true"></div><button type="button" class="flc-orator-controller-playToggle" aria-label="play"><span class="fl-orator-controller-playToggle fl-icon-orator-playToggle" aria-hidden="true"></span></button></div>
+            <div class="sjrkc-st-story-details">
+                    <h2 class="sjrkc-st-story-title sjrk-st-story-title">Jorge's Story</h2>
+                    <p class="sjrkc-st-story-author sjrk-st-story-author">by Jorge Almeida</p>
+
+                <div hidden="" class="sjrk-st-language-container">
+                    Language(s): <span class="sjrkc-st-story-language sjrk-st-story-language">
+                        
+                    </span>
+                </div>
+
+                <div class="sjrk-st-tags-container">
+                    Keywords:
+                    <ul class="sjrkc-st-story-list-tags sjrk-st-story-list-tags">
+                            <li>family, </li>
+                            <li>love, </li>
+                            <li>wheelchair, </li>
+                            <li>cerebral palsy, </li>
+                            <li>Portugal, </li>
+                            <li>Canada, </li>
+                            <li>respite care, </li>
+                            <li>Liberator</li>
+                    </ul>
+                </div>
+
+                <div class="sjrkc-st-story-content sjrk-st-story-content"><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-3301">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb84a150-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A large group of people, including one small child, sit and stand on the grass near some trees. Many are smiling for the camera. They are dressed for warm weather, with many wearing shorts and T-shirts or tank tops.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-3586">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb8ba630-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A young man sits in a wheelchair on some grass in front of a pond surrounded by trees, with a basketball lying on the ground in front of him. He is smiling, and his right arm appears to be in motion. He has short brown hair and wears burgundy track pants, grey socks and a pink and yellow tie-dyed T-shirt.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-3870">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb8c9090-f863-11ea-9fdd-552aa35bda8b.jpg" alt="Two young men in wheelchairs sit side by side at the edge of the street between a small bus and a brick building. They are dressed formally, both wearing ties, with one in a blazer, and are posing and smiling for the camera. In the background there is a man standing beside a wheelchair and an SUV, as well as two people standing on the street directly behind them. ">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-4156">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb8df020-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A blurry photo shows a young man in a power wheelchair who appears to be moving across a stage. He is beside a table full of trophies, with a number of people sitting behind him on the stage including one woman in a wheelchair.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-4444">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb8e8c60-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A young man sits in a power wheelchair on a stage.  A woman stands beside him and appears to be handing him something.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-4734">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>The Early Years</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>Hello.  My name is Jorge Almeida.  I am 42 years old.  I was born December 6th, 1970 in San Joao da Madeira in Portugal.</p>
+<p>I come from a family of four:  my father, mother, sister and me.  I have 11 aunts and uncles and a grandmother still living in Portugal.  My mother went into the hospital to have me.  The nurse came in too early.  She pushed me too much.  I was black when I came out.  She didn't have air for me.</p>
+<p>In 1971 my parents came to Canada and I lived with my grandmother in Portugal four years while the paper work was being done for me to come to Canada.  It was because of my disability that it required more paper work to come to this country.  I came to Canada with my grandmother in 1975 when I was 4 years old.  We came by airplane.  We got off at the wrong place:  we got off in Toronto.  My family was waiting for us in Montreal.  Now I am happy to live here in Canada.</p>
+<p>My mother and father did not know I had Cerebral Palsy when I was a baby.  I could not crawl on the floor and I was sick most of the time.  We went to the doctor.  He said I was slow.  He did not want to say what I had.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-5026">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb8f9dd0-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A group of 6 people, including 3 men and 3 women, pose in front of a river under some trees. A bridge appears in the background. One man sits in a wheelchair.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-5320">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Family Life</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>On Christmas Eve at my house my cousins and my aunt come over.  We talk about the last year and after they play bingo we go upstairs to see a movie.  At midnight we all stop what we are doing to say "Merry Christmas!"</p>
+<p>I like living with my family because they help me with many things.  I love my family because they talk to me.  I am worried because if they die, where would I go?</p>
+<p>My sister is my good friend.  She helps me so much with my care.</p>
+<p>My cousin is my good friend because she works at FBA.  I can talk with her about my feelings about housing.  Sunday is for talking with family and changing air from the city.  My family loves going to the park each Sunday in the summer.  We go at 8 am.  When we get to the park we eat.  I watch the men play ball and after my father goes swimming.  Father is the cook of the meat.  We come back at about 7 pm .  When we get back I want to go to bed.  We have so much fun each Sunday.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-5616">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb908830-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A group of 4 people pose in front of a large, landscaped garden of grass and flowers. One man and 2 women stand behind a young man sitting in a wheelchair.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-5914">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Cerebral Palsy</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>When I was born my mother went into the hospital and that is where she went so wrong.  My doctor worked all night and after he went home.  The nurse wanted to go to sleep after a long night of working.  My mother had no pain at that time.  The nurse came in to help us too early.  When I came out I was all black because there was no air for me.  I had the umbilical cord around my neck. That is why I have C.P.</p>
+<p>The nurse put many people in wheelchairs.  That makes me so angry.  Why wasn't she stopped before that day?  I had a friend who was in bed all his life because of her.</p>
+<p>I felt so angry because my mother went to the hospital to have a beautiful healthy baby boy.  I keep thinking:  " What if my mother had had me at home?"</p>
+<p>I can not walk or talk at all and I am in a wheelchair.  It is not that bad; I am happy most of the time.  I do have a good life but I do ask why me sometimes.  But, if God wanted me in a wheelchair, I make the most of it.</p>
+<p>I want to do so many things but I can not do them.  I am angry because my little sister can drive a car but I can not.  Maybe if I did not have CP I would have been more like my sister.  I felt sad when my sister went to play with her friends.</p>
+<p>I could have been a cook if I wanted.  I learned to cook by watching my mother.  She is a good cook when she wants to be.</p>
+<p>I get angry when people walk slowly when I am trying to get around them.  I get so angry when people cut me off.  I feel like saying "I could not stop my wheelchair, sorry".  When I am in a mall trying to get upstairs or downstairs people do not get off the elevator.  I get so angry because they have good legs for the stairs.</p>
+<p>This is what people need to do for me:</p>
+<p>I need help with everything.  I need help getting up in the morning.  I need help to go to the washroom and putting clothing on.  I need people to feed me.  I need help changing chairs for work. I need a beautiful woman to wash me!  I need help with all my care.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-6214">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb92d220-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A group of people, including a child and a man in a wheelchair, pose in the sun on a road overlooking what appears to be some water and buildings. ">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-6516">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb934750-f863-11ea-9fdd-552aa35bda8b.jpg" alt="An autographed polaroid (autograph illegible) showing a young man in a wheelchair being embraced by a woman in a short white dress and high heels, who stands on one foot, while lifting the other leg toward the camera. ">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-6820">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Talking</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>I do not speak so I need a talking machine or a word board to talk.</p>
+<p>When I was five I had my first Bliss board.  My speech therapist Ann made my first board.  I liked the board that she made for me.  Later on, when I needed a new board I would help her.</p>
+<p>This is how we went about making a Bliss board:  We needed to know all the words that I needed for my Bliss board.  We had to put all the words and Bliss symbols in their places on the board.  If I needed a word and there was no Bliss symbol for that word, we had to make it up.  If the word was hamburg we would put bread and meat as one Bliss symbol.  We had fun with that.  After all the words were in their places, we colored the Bliss board.  Here are the colors:  people were yellow, feelings were blue, questions and time words were white.  There we had a Bliss board!</p>
+<p>I did good work.  I kept getting 80 or 90 in school.  Just think how good I would be if I had
+had a talking machine that worked back then.  I did not answer the teacher much because I was slow to answer.  My teacher could not wait for my answer;  most days I did not answer a question even if I knew the answer.</p>
+<p>My Talking Computer</p>
+<p>I once had a talking machine that did not work with my wheelchair, and this went on for two years.  I had many therapists who tried to help me but they did not help me all the time.  The machine I had would stop so frequently that I was going to the Treatment Centre on average three times a week.  I didn't do much work at school such as learning to read because of that faulty machine.  I called the therapist at the Treatment Centre so frequently that I felt like sleeping there.  The therapist said "Yes" it was a good idea to stay there.  After fifteen months I told my therapist that I wanted a new machine.</p>
+<p>To sum it up:  I was angry and frustrated with the faulty machine because of the many times the therapist and I tried to fix it with no luck.  I finally got a new machine called a Light Talker which I had for five years and it never broke.  As for my progress in reading, I answered the teacher much more often with this new machine.</p>
+<p>I have a Liberator now.  It has worked well for me so far.  I can do so much.  I can put in a long talk in my Liberator so I can give a talk.  I can print my work on my Liberator too.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-7126">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb939570-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A close-up view of a communication aid mounted on a wheelchair, showing the input board up top, with large, circular foot controls below, which are labelled with arrows.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-7434">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Homes</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>I went to the Rotary Home for respite care when I was 11 years old.  I didn't like going there much because my friends were not there.  I thought to myself "why don't I go with friends?".  So I did and it made the weekend fun.  I loved going there mostly when they made a weekend for  teenagers.  We went there Friday after school so we could party all weekend. We had fun.</p>
+<p>Unfortunately, I could no longer go to the Rotary Home for respite care when I became an adult.  The Rotary Home is only for children.</p>
+<p>Parkway House</p>
+<h4>Adult house</h4>
+<p>After many years of trying to find a house for respite, I think I found a good place.  I can go there 12 weeks a year if I want.</p>
+<p>If I like the house I will take the 6 weeks. If I like the people that work and live there I will go back.</p>
+<p>I tried the house for a week.  I was excited and afraid to see what the people were like there.  When I got there I needed to do paper work with them.  I needed to say all I need help with, for example, how I get out of my wheelchair.  I liked that they learned from me.</p>
+<p>I loved it at this house because the people who work there are funny.  What I like the best is the house is good for my wheelchair and the people that live there are not too loud.</p>
+<h4>My dream house</h4>
+<p>I would like a home with five adults.  My house would work like this:  the residents would run the house;  we would have a say with everything in that house.  We would have meetings about everything.  We would choose the people that work for us.  I would do the bookkeeping on my computer in my room.</p>
+<p>We would do many things.  The weekend would be for us to have fun.  I would sleep in on Saturday and Sunday.  We would go swimming Saturday afternoon and I would go dancing.  I would come home when I want.  After all, I would be the boss.</p>
+<p>The house would have rooms for five adults.  It would be on one floor with two washrooms.
+We would live and work like a family.  We would make it work so well.  My family could live so much more without thinking about me so much.  I could live so well.  All we need is money to make my dream house work.</p>
+<p>I have been working on housing for adults  for 6 years now.  You may be asking how I do it.  I write many letters to all the MPs.  What I want to see in Ottawa is a place where adults in wheelchairs can go for respite care.  I know this is needed in Ottawa.  I will keep working on trying to change things for us all.  I want to let people know we need this as soon as possible. Many people will use this place .</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-7744">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Chantal Bedard</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>Chantal was my girlfriend.  We met at the Treatment Centre when I was 4 years old.  We went on trips together to Disney World and Toronto.</p>
+<p>Chantal and I often went together for respite care at the Rotary Home.  We were able to talk together without our families.  We both used our voice synthesizers.</p>
+<p>On my 21st birthday, Chantal and I went to the Olive Garden with other friends.  We told many funny stories and laughed a lot.  When the bus driver picked us up to go home he took Chantal to her family's apartment instead of the Rotary Home.  We frantically tried to get across to the bus driver that she was going to the Rotary Home.  We laughed all the way back.</p>
+<p>Unfortunately, Chantal and I could no longer go to the Rotary Home for respite care when we became adults. The Rotary Home is only for children.</p>
+<p>Chantal and I also went to work at Computer Wise when we finished McArthur High School.</p>
+<p>Chantal went for respite at Elizabeth Bruyere on October 31, 1995.  She became very sick and she was admitted to the General Hospital.  On November 4th she was put on a respirator.  Later on, she went into a coma for 6 days and caught pneumonia.</p>
+<p>I thought I was not allowed to see her there in ICU.  I thought I would try anyway.  I was very surprised when they let me in ICU.  I talked to her for an hour and I kept going to see her every Wednesday morning.  I would tell her about the news at work.  I talked about many things.  I felt that she could hear me.</p>
+<p>I went to see her on a Tuesday.  Little did I know that it would be my last time to see her.  I was afraid that she might die.  Thursday I got to work and got the news that she had died the day before, December 13, 1995.  I felt very sad but I was thankful that I had seen her the day before.  I had to go to a meeting at Algonquin College Thursday afternoon.  I could not think very well because I was so sad.</p>
+<p>Friday afternoon I went to her wake.  I said my last goodbye to her.  I went to her funeral on Saturday.  I knew her for most of my life.  I miss her.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-8056">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb94f500-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A close-up view of a young woman with dark hair and brown eyes sitting in a chair and smiling with her head tipped back.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-8370">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Camp Life</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>When I was 5 years old I went to Merrywood Camp for my first time.  I didn't like it there much.  My mother made me go for many years.</p>
+<p>When I was 15 years old all that changed.  I went with friends and we made camp exciting.  We went swimming, boating, fishing and we went on walks.  We went outside when we should have been in bed in the afternoon.  They tried to find us but we were too quick for them.  We did many bad things back then.  We put water on a boy we did not like and we put his clothing up a flag pole.  One day I was talking with a friend when a staff person came and got me.  I went with her but the minute she was not looking I turned my wheelchair around and I went back to where my friends were.  My last year I felt sad because I had fun there.</p>
+<p>I have been going to the City of Ottawa recreational programs for 20 years.  I like it there because they get new staff.  The staff have become my good friends.  I like it when they say jokes to me.  What I like most of all is my talks with them.  We talk about what we are doing in life.  We do many activities like swimming, going to plays, boating, going to dinner, and much more.</p>
+<p>In July I went to day camp on Thursdays and Fridays.  We saw an interesting movie.  We went to the Art Gallery:  we went to a workshop in the morning and in the afternoon we had questions to answer.  How fun that was!</p>
+<p>For the last 6 years I have been going to the March of Dimes camp in the summer.  We travel in the bus for 6 hours and we eat in the bus too.  I made many new friends.  At the camp, we do many things or sit there in the sun if we want.</p>
+<p>In '97 I had fun on my holiday.  We had beautiful weather.  We got to the camp at 4 pm.  I went to see my room and got changed.  I met my help for the week and after we went to eat.  The meals there are so good.  Monday I went on a bus trip around the city and in the afternoon I went for a walk.  I went to the farm on Tuesday.  I saw many animals and birds.  On Tuesday night I went to the casino but I did not win big money.</p>
+<p>I was so excited that I could go last year.  After all, I hadn't had a holiday like that for two years.  It was so much fun.  I had many good friends there.  I needed a quick holiday right about then.  I needed a holiday so bad.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-8686">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>My Back Operation</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>I went to the doctor one day.  My doctor told me he wanted to put a metal rod in my back and I consented.  I thought he knew more than I did about this but I was so wrong.  I had the operation and I was supposed to be out of the hospital in nine days but I was in the hospital for 6 weeks.  If you eat hospital food for 6 long weeks you too would need to see a doctor!</p>
+<p>My right hand moved around without my control and it would remove the tubes on my body.  The doctor gave me too much medication to calm me down and I passed out for a while and there were concerns about my well-being.  In addition, I battled with pneumonia which probably came about from the lengthy operation and being in the nude.  Then I got a large infection where they sewed me up.</p>
+<p>Fifteen months later when I went to my uncle's place to have supper I felt a sharp pain.  I did not think it was the metal rod.  I thought the pain would go away quickly.  Later I went to the doctor to have an X-Ray and to my surprise I saw that the rod was broken.  I went back to the hospital and the doctors fixed it.  This time it was much easier on me.</p>
+<p>If it were today I wouldn't have the rod put in.  I did not have pain in my back.  The doctor said I would have pain later in life.  I did not talk to more doctors.  That is where I went wrong.  I should have talked with more doctors.</p>
+<h4>Life in hospital</h4>
+<p>When I was in the Children's Hospital the nurses did not understand me.  They did not want to see what I wanted.  One day when I was wet, I kept trying to call for help but they did not come.  I sat there all wet for many hours.  When my worker came to see me she went for help to get me changed.  That was not right;  they did not stop to see what I needed.  I wish they would make a little talking machine for the hospital.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-9004">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>My Wheelchair and Liberator</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>I have an electric wheelchair which I work with my left foot.  I have a five-way switch that I use with my left foot to work my wheelchair and my Liberator.</p>
+<p>I have a Liberator on my wheelchair so I can tell people where to go.  A Liberator is a talking computer.  My Liberator is plugged into the back of my electric wheelchair.  The Liberator has four levels of words which I can go get with a red light on my Liberator.  Ex:  Let's say I want the word "people".  I would go to level one and go get the word "people" on my Liberator.  I can spell on my Liberator too.</p>
+<p>I can write on an IBM computer and that is where I wrote my best seller.  My Liberator is plugged into a T-Tam ( Trace Transparent Access Module) which is plugged into an IBM computer.  I can do all my writing like that.  I can work on the Internet as well.</p>
+<p>That is how I use my Liberator.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-9324">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb956a30-f863-11ea-9fdd-552aa35bda8b.jpg" alt="Close-up view of someone's foot controlling the large buttons of a communication aid, which are mounted on a foot rest, two of which are visible and are labelled with an up arrow and a right arrow respectively.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-9646">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>The Treatment Centre</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>When I was 4, I started school.  My school was at the Treatment Centre beside the Children's Hospital of Eastern Ontario.</p>
+<p>I was lucky because I had a good therapist.  Her name was Ann Warrick.  We tried a talking machine that was a circle with bliss.  We made my first bliss board.  I would use my thumb to point to words.  Thanks to her I can communicate today.</p>
+<p>I had two friends and their names were Liz and Chantal. We had lots of fun together.  I still keep in contact with Liz today but sadly, Chantal has left this earth.</p>
+<p>Our class went on two trips:  one was to Disney World for a week and the other was to Toronto for four days.  On the first trip, we flew to Disney World and we met with many teenagers in wheelchairs in a park and we ate and played games with them.</p>
+<p>On the second trip, our class went by bus to Toronto and we went to the zoo where we saw many animals.</p>
+<p>I was fourteen years old when I went to Centennial School.  Bob Watt was my teacher.  He worked with me on an Apple 2E.  We worked mostly on Logo.  I made many things like houses.</p>
+<p>I made my name in Logo.  I played with my name for months and months to get it right.  The day we saw my name on a computer we cried because we were so pleased with my work.</p>
+<p>I went to McArthur High School.  I had many good friends there.  I liked most of my teachers there but there was one teacher I could not stand.  She wanted us to be there on time;  I was on time most days.  One day, I was talking to a teacher's aide about my back when my angry teacher came to get me.  I was so angry at her.</p>
+<p>I had a bad year that year because my friend Curtis Biggs died a week before Christmas.  We were like brothers, he and I.  We went to many places with his dad.  We went on a fire truck around Ottawa.  We kept going on red lights.  We went to many 67  games.  We had fun when we went to Beavers together.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-9970">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>My Graduation Night</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>My graduation was June 28, 1993.  At 5, Kelly and I went from the Rotell to school.  We had our graduation at 6.  My girlfriend went too.  After the graduation, they had drinks for the people that came to see us.  We were there for 5 minutes.  After all, we had a graduation party to get to.  We had a bus to take us to our party.  When we got there we ate and after we danced all night long.  The meal was good.  What I liked most was that my girlfriend Chantal was with me.  We danced all night long.  We had so much fun that night</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-10296">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb95b850-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A young man sits in a power wheelchair on a stage.  A woman stands beside him and appears to be handing him something.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-10624">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>SIP</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>One summer I went to  the Summer Independence  Program in July to learn how to live life independently.  The program was at the Rehabilitation Center.  I wanted to go to SIP so my doctor said I could go. On June 28 I went to Rotell.  We went to see my bedroom and then my mother and I went to the hospital.  We had a meeting with my worker and after I said "See you later".  I went to another meeting to hear about the three weeks.</p>
+<p>We had many meetings about life.  We learned many things:  cooking with a helper, talking on the telephone and banking.  One day the doctor came to talk to us about the birds and the bees.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-10954">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb967ba0-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A large group of people pose on an outdoor basketball court, under a basket. Many of them are in wheelchairs in the front row, while others stand behind.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-11286">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Jobs</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>I am working four days a week at Computer Wise and I love it.  I am working on many jobs.  I love that.  When I go to work I do not know what jobs I will get.  I am learning Word Perfect 7.  I write e-mail to send to people and they write back to me.  I have a pen pal on the net.  I like having a friend that I can write to when I want.</p>
+<p>The job I like the most is writing to many MPs to change things. I wrote so many letters for change with no luck.  I will keep after them.  When we get what we need I will move on.  I hope that day comes soon.</p>
+<p>I was excited when I tried the Internet.  We had been trying to get me on the net for three months.</p>
+<p>I want to learn how to do many more jobs.  I want to see what work I can do.  The first thing I want to try is bookkeeping.  I also want to learn how to write a good CV.  I could also work with teenagers who need to learn to use their talking machine.  I could ask them questions and they would answer me by using their voice box.</p>
+<p>Last but not least, I need to show many people how to drive their wheelchairs.  If I did this job I would be working five days a week.  I could not come to work at Computer Wise again. Yes - there are that many people who need a driving teacher like me.</p>
+<p>We should get money to pay a person that works for me.  Then I could find more work for me to do.  I could change where I work or that person could go on outings with me if I wanted.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-11620">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"></h3>
+        <img class="sjrk-st-block-media-preview" src="/images/eb96c9c0-f863-11ea-9fdd-552aa35bda8b.jpg" alt="A young man in a wheelchair sits smiling in front of a woman who stands, holding and reading some papers. They appear to be in an office.">
+        <p class="sjrk-st-block-text-view"></p>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-11956">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>Para</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>We are so lucky to have a bus for people in wheelchairs.  We can go everywhere in the city.  I must call for a bus the day before.</p>
+<p>When a person wants to get somewhere on time, most times he or she can but not all the time.  Para is good most of the time but they can be late.  One day the bus forgot me at work right before my long holiday.  I was so angry because I had places to be that day.  I was so late.</p>
+<p>I wish I could drive.  Then I could go where I want when I want.</p>
+</div>
+    </div>
+</div><div class="sjrkc-dynamic-view-component sjrk-dynamic-view-component sjrkc-dynamic-view-component-77ybp6p0-12294">    <div class="sjrk-st-block" lang="">
+        <h3 class="sjrk-st-block-heading-view"><p>My Dream</p>
+</h3>
+        <div class="sjrk-st-block-text-view"><p>I dreamt about walking out of my bed one morning.  I went to make coffee for my mother and father.  They were so surprised that we telephoned my grandma.</p>
+<p>I got into my wheelchair to go to work.  After ten minutes, I stood up.  Everyone at work stared at me with their mouths open.  I said, "Surprise!".  I was so happy.</p>
+</div>
+    </div>
+</div></div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+        <div class="sjrk-st-story-notFoundNotice sjrkc-st-story-notFoundNotice"></div>
+    </div>
+</main>
+
+<footer class="sjrk-st-page-footer-container sjrkc-st-page-footer-container"><div class="sjrk-st-page-footer-text-container">
+    <p>Led by the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> at OCAD University with an open community of contributors. Supported by the <a href="https://www.hewlett.org/">William and Flora Hewlett Foundation</a> and the <a href="http://www.oakfnd.org/">Oak Foundation</a>.</p>
+
+    <p>Stories on this site are distributed under the <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 licence</a>. Please email us at <a href="mailto:stories@idrc.ocadu.ca">stories@idrc.ocadu.ca</a> if you wish to remove your story from this website.</p><p>Hosted by <a href="https://netlify.com/" rel="external">Netlify</a>.</p>
+
+</div>
+<div class="sjrk-st-page-footer-logo-container">
+    <a class="sjrk-st-page-footer-oak-logo" href="http://www.oakfnd.org/" aria-label="Oak Foundation Website"></a>
+    <a class="sjrk-st-page-footer-hewlett-logo" href="https://www.hewlett.org/" aria-label="William and Flora Hewlett Foundation Website"></a>
+    <a class="sjrk-st-page-footer-idrc-logo" href="https://idrc.ocadu.ca/" aria-label="Inclusive Design Research Centre Website"></a>
+</div>
+</footer>
+
+
+
+
+
+</body></html>
